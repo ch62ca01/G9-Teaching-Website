@@ -1,0 +1,22 @@
+<form>
+    <input type="text" placeholder="Username" id="text1" /><br />
+    <input type="password" placeholder="Password" id="text2" /><br />
+    <input type="button" value="Login"  onclick="javascript:validate()" />
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(   document.getElementById("text1").value == "isd"
+       && document.getElementById("text2").value == "lion" )
+    {
+        alert( "Welcome to " );
+        location.href="index.html";
+    }
+    else
+    {
+        alert( "Incorrect Username or Password" );
+        location.href="Login.html";
+    }
+}
+</script>
+<h7> * school initals and school animal all lowercase * </h7>
